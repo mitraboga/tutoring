@@ -18,16 +18,15 @@
             color: #FCA311; /* Gold accent */
             padding: 20px 0;
             text-align: center;
-        }
-        nav {
-            background: #333;
-            color: white;
-            display: flex;
-            justify-content: center;
-            padding: 10px;
             position: sticky;
             top: 0;
             z-index: 1000;
+        }
+        nav {
+            background: #333;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
         }
         nav a {
             color: white;
@@ -41,7 +40,10 @@
             color: #14213D;
             border-radius: 5px;
         }
-        section {
+        .front-page {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
             padding: 40px;
             margin: 20px auto;
             max-width: 1200px;
@@ -49,24 +51,39 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
-        .skills, .qualifications, .syllabus, .contact {
-            margin-bottom: 20px;
+        .profile {
+            flex: 1;
+            text-align: center;
         }
-        h2 {
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #FCA311;
+        }
+        .profile .contact-info {
+            margin-top: 20px;
+        }
+        .profile .contact-info p {
+            margin: 5px 0;
+        }
+        .about {
+            flex: 2;
+            margin-left: 20px;
+        }
+        .about h2 {
             color: #FCA311;
             border-bottom: 2px solid #FCA311;
             padding-bottom: 10px;
         }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        ul li {
-            margin: 10px 0;
-            padding: 10px;
-            background: #1A1A40;
-            border: 1px solid #FCA311;
-            border-radius: 5px;
+        section {
+            display: none;
+            padding: 40px;
+            margin: 20px auto;
+            max-width: 1200px;
+            background: #24243E; /* Greyish blue */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
         footer {
             background: #14213D;
@@ -74,60 +91,52 @@
             text-align: center;
             padding: 20px;
         }
-        .contact a {
-            color: #FCA311;
-            text-decoration: none;
-        }
-        .contact a:hover {
-            text-decoration: underline;
-        }
-        .interactive {
-            text-align: center;
-        }
-        .interactive img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
     </style>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
 </head>
 <body>
     <header>
         <h1>Welcome to My Tutoring Service</h1>
-        <p>Providing exceptional computer education for grades 6-9 to prepare students for a bright future.</p>
+        <nav>
+            <a href="#" onclick="showSection('about')">About Me</a>
+            <a href="#" onclick="showSection('qualifications')">Qualifications</a>
+            <a href="#" onclick="showSection('syllabus')">Tutoring Program</a>
+            <a href="#" onclick="showSection('contact')">Contact</a>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#skills">Skills</a>
-        <a href="#qualifications">Qualifications</a>
-        <a href="#syllabus">Tutoring Program</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <div class="front-page">
+        <div class="profile">
+            <img src="profile.jpg" alt="Profile Picture">
+            <div class="contact-info">
+                <p>Email: <a href="mailto:mitraboga31@gmail.com">mitraboga31@gmail.com</a></p>
+                <p>Phone/WhatsApp: <a href="tel:+918125263863">+91 81252 63863</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/bogamitra/" target="_blank">linkedin.com/in/bogamitra</a></p>
+                <p>GitHub: <a href="https://github.com/mitraboga" target="_blank">github.com/mitraboga</a></p>
+            </div>
+        </div>
 
-    <section id="about" class="about interactive">
+        <div class="about">
+            <h2>About Me</h2>
+            <p>Coming soon: I will share my journey, passion for teaching, and why I am the perfect tutor to guide you or your child towards success.</p>
+        </div>
+    </div>
+
+    <section id="about">
         <h2>About Me</h2>
-        <img src="about.jpg" alt="About Me Image">
-        <p>Coming soon: I will share my journey, passion for teaching, and why I am the perfect tutor to guide you or your child towards success.</p>
+        <p>Details about your story and why you are the best tutor will go here.</p>
     </section>
 
-    <section id="skills" class="skills interactive">
-        <h2>Skills</h2>
-        <img src="skills.jpg" alt="Skills Image">
-        <ul>
-            <li>Programming: Python, Java, C</li>
-            <li>Web Development: HTML, CSS, JavaScript</li>
-            <li>AI and Machine Learning</li>
-            <li>Cloud Computing and Networking</li>
-            <li>Operating Systems and Computer Architecture</li>
-            <li>Graph Theory and Quantum Mechanics</li>
-        </ul>
-    </section>
-
-    <section id="qualifications" class="qualifications interactive">
+    <section id="qualifications">
         <h2>Qualifications</h2>
-        <img src="qualifications.jpg" alt="Qualifications Image">
         <ul>
             <li>University of Waterloo: Accounting and Financial Management, Honours, Co-op ($2000 President's Scholarship)</li>
             <li>Gandhi Institute of Technology and Management: Computer Science Engineering with a minor in Mechanical Engineering (8.85 CGPA)</li>
@@ -136,31 +145,17 @@
         </ul>
     </section>
 
-    <section id="syllabus" class="syllabus interactive">
+    <section id="syllabus">
         <h2>5-Month Tutoring Program</h2>
-        <img src="syllabus.jpg" alt="Syllabus Image">
-        <p>This program is designed to cover the following:</p>
-        <h3>Syllabus</h3>
-        <ul>
-            <li>Month 1: Foundations and Fundamentals (Introduction to Computers, Programming with Python, HTML & CSS Basics)</li>
-            <li>Month 2: Programming and Engineering Basics (Python Advanced, Intro to Java, Binary Numbers, Operating Systems)</li>
-            <li>Month 3: Networking, AI, and Web Development (Networking Basics, JavaScript, AI Applications, Cloud Computing)</li>
-            <li>Month 4: Advanced Concepts (Quantum Mechanics, Computer Architecture, Memory & Storage)</li>
-            <li>Month 5: Final Projects and Applications (Programming & Web Development Showcase, AI Projects)</li>
-        </ul>
-        <h3>Timings</h3>
-        <p>Classes are held on Saturdays and Sundays for 1-2 hours per session, ensuring a total of 40 focused sessions over 5 months.</p>
-        <h3>Pricing</h3>
-        <p>Affordable pricing available upon request. Contact me for more details!</p>
+        <p>Program details and syllabus will go here.</p>
     </section>
 
-    <section id="contact" class="contact interactive">
+    <section id="contact">
         <h2>Contact Me</h2>
-        <img src="contact.jpg" alt="Contact Image">
         <p>Email: <a href="mailto:mitraboga31@gmail.com">mitraboga31@gmail.com</a></p>
         <p>Phone/WhatsApp: <a href="tel:+918125263863">+91 81252 63863</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/bogamitra/" target="_blank">https://www.linkedin.com/in/bogamitra/</a></p>
-        <p>GitHub: <a href="https://github.com/mitraboga" target="_blank">https://github.com/mitraboga</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/bogamitra/" target="_blank">linkedin.com/in/bogamitra</a></p>
+        <p>GitHub: <a href="https://github.com/mitraboga" target="_blank">github.com/mitraboga</a></p>
     </section>
 
     <footer>
