@@ -1,49 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mitra Boga Tutoring Services</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        .sidebar {
+            width: 250px;
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto;
+            display: block;
+        }
+        
+        .social-links {
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .social-icon {
+            width: 20px;
+            margin-right: 10px;
+        }
+        
+        .main-content {
+            margin-left: 270px;
+            padding: 20px;
+        }
+        
+        .nav-tabs {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+        
+        .nav-tabs a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+        }
+        
+        .nav-tabs a:hover {
+            background-color: #eee;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="Tutoring Service Logo" class="logo">
-    </header>
-    <div class="container">
-        <aside class="profile-panel">
-            <img src="profile.jpg" alt="Mitra Boga" class="profile-pic">
-            <div class="contact-info">
-                <a href="https://www.linkedin.com/in/bogamitra/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/mitraboga" target="_blank">GitHub</a>
-            </div>
-        </aside>
-        <main>
-            <section id="about">
-                <h1>About Me</h1>
-                <p>Hi, I'm Mitra Boga, a 21-year-old with an unwavering passion for business and technology. From tracking advancements in top S&P500 companies to exploring cutting-edge innovations like cloud computing, AI, and tools like ChatGPT, I’m constantly driven to stay ahead in the tech-driven world.</p>
-                <h2>My Vision</h2>
-                <p>Through my unique journey, I’ve gained experiences and learned lessons that many don’t encounter until their late 20s...</p>
-                <h2>My Educational Qualification</h2>
-                <p>I began my academic journey at the University of Waterloo, studying Accounting and Financial Management for two years...</p>
-                <h2>Professional Experience</h2>
-                <ul>
-                    <li>Full Stack Developer Intern at GitHub Octernship</li>
-                    <li>Incoming AWS Solutions Architect Intern at Amazon for Summer 2025</li>
-                </ul>
-            </section>
-        </main>
+    <div class="sidebar">
+        <img src="your-profile-pic.jpg" class="profile-pic" alt="Mitra Boga">
+        <div class="social-links">
+            <a href="https://github.com/mitraboga">
+                <img src="github-icon.png" class="social-icon" alt="GitHub">
+                GitHub
+            </a>
+            <a href="https://linkedin.com/in/bogamitra">
+                <img src="linkedin-icon.png" class="social-icon" alt="LinkedIn">
+                LinkedIn
+            </a>
+        </div>
     </div>
-    <nav class="sections-bar">
-        <ul>
-            <li><a href="#syllabus">Syllabus</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#timings">Timings</a></li>
-        </ul>
-    </nav>
-    <footer>
-        <p>&copy; 2024 Mitra Boga Tutoring Services</p>
-    </footer>
+
+    <div class="main-content">
+        <h1>Hi, I'm Mitra! 👋</h1>
+        <p>Computer Science Major, Engineer</p>
+
+        <div class="nav-tabs">
+            <a href="#syllabus">Syllabus</a>
+            <a href="#contact">Contact</a>
+            <a href="#timings">Timings</a>
+            <a href="#pricing">Pricing</a>
+        </div>
+
+        <!-- Contact Information Section -->
+        <div id="contact">
+            <h2>Contact Information</h2>
+            <p>Email: mitraboga31@gmail.com</p>
+            <p>Phone/WhatsApp: +91 81252 63863</p>
+        </div>
+
+        <!-- Timings Section -->
+        <div id="timings">
+            <h2>Session Timings</h2>
+            <h3>2-Hour Sessions:</h3>
+            <p>IST: 7:30 PM - 9:30 PM</p>
+            <p>EST: 10:00 AM - 12:00 PM</p>
+            
+            <h3>1-Hour Sessions:</h3>
+            <p>IST: 7:30 PM - 8:30 PM</p>
+            <p>EST: 10:00 AM - 11:00 AM</p>
+        </div>
+
+        <!-- Pricing Section -->
+        <div id="pricing">
+            <h2>Pricing</h2>
+            <p>$35/hour</p>
+        </div>
+
+        <!-- Syllabus Section -->
+        <div id="syllabus">
+            <h2>Syllabus</h2>
+            <p>Coming soon...</p>
+        </div>
+    </div>
 </body>
 </html>
