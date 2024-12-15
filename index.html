@@ -3,180 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutoring Services Portfolio</title>
+    <title>Portfolio & Tutoring Service</title>
     <style>
-        :root {
-            --dark-blue: #1a237e;
-            --navy: #0d1b2a;
-            --gold: #ffd700;
-            --white: #ffffff;
-        }
-
-        * {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-
-        body {
-            background-color: var(--navy);
-            color: var(--white);
             line-height: 1.6;
+            background-color: #1A1A40; /* Dark blue */
+            color: white;
         }
-
         header {
-            background-color: var(--dark-blue);
-            padding: 2rem;
+            background: #14213D; /* Navy blue */
+            color: #FCA311; /* Gold accent */
+            padding: 20px 0;
             text-align: center;
-            border-bottom: 3px solid var(--gold);
         }
-
         nav {
-            background-color: var(--dark-blue);
-            padding: 1rem;
-            position: sticky;
-            top: 0;
-        }
-
-        nav ul {
+            background: #333;
+            color: white;
             display: flex;
             justify-content: center;
-            list-style: none;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
-
-        nav ul li {
-            margin: 0 1rem;
-        }
-
-        nav ul li a {
-            color: var(--white);
+        nav a {
+            color: white;
+            margin: 0 15px;
             text-decoration: none;
-            transition: color 0.3s;
+            padding: 10px;
+            transition: background 0.3s, color 0.3s;
         }
-
-        nav ul li a:hover {
-            color: var(--gold);
+        nav a:hover {
+            background: #FCA311;
+            color: #14213D;
+            border-radius: 5px;
         }
-
         section {
-            padding: 4rem 2rem;
-            margin: 2rem auto;
+            padding: 40px;
+            margin: 20px auto;
             max-width: 1200px;
-        }
-
-        .section-title {
-            color: var(--gold);
-            font-size: 2rem;
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .service-card {
-            background-color: var(--dark-blue);
-            padding: 2rem;
+            background: #24243E; /* Greyish blue */
             border-radius: 10px;
-            border: 1px solid var(--gold);
-            transition: transform 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
-
-        .service-card:hover {
-            transform: translateY(-5px);
+        .skills, .qualifications, .syllabus, .contact {
+            margin-bottom: 20px;
         }
-
-        .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
+        h2 {
+            color: #FCA311;
+            border-bottom: 2px solid #FCA311;
+            padding-bottom: 10px;
         }
-
-        input, textarea {
-            width: 100%;
-            padding: 0.8rem;
-            margin-bottom: 1rem;
-            border: 1px solid var(--gold);
-            background-color: var(--navy);
-            color: var(--white);
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+            padding: 10px;
+            background: #1A1A40;
+            border: 1px solid #FCA311;
             border-radius: 5px;
         }
-
-        button {
-            background-color: var(--gold);
-            color: var(--navy);
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        button:hover {
-            background-color: #ffc400;
-        }
-
         footer {
-            background-color: var(--dark-blue);
+            background: #14213D;
+            color: white;
             text-align: center;
-            padding: 2rem;
-            margin-top: 2rem;
-            border-top: 3px solid var(--gold);
+            padding: 20px;
+        }
+        .contact a {
+            color: #FCA311;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        .interactive {
+            text-align: center;
+        }
+        .interactive img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Your Name</h1>
-        <p>Professional Tutor</p>
+        <h1>Welcome to My Tutoring Service</h1>
+        <p>Providing exceptional computer education for grades 6-9 to prepare students for a bright future.</p>
     </header>
 
     <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#qualifications">Qualifications</a>
+        <a href="#syllabus">Tutoring Program</a>
+        <a href="#contact">Contact</a>
     </nav>
 
-    <section id="about">
-        <h2 class="section-title">About Me</h2>
-        <p>Your introduction and qualifications here...</p>
+    <section id="about" class="about interactive">
+        <h2>About Me</h2>
+        <img src="about.jpg" alt="About Me Image">
+        <p>Coming soon: I will share my journey, passion for teaching, and why I am the perfect tutor to guide you or your child towards success.</p>
     </section>
 
-    <section id="services">
-        <h2 class="section-title">Tutoring Services</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <h3>Subject 1</h3>
-                <p>Description of tutoring service...</p>
-            </div>
-            <div class="service-card">
-                <h3>Subject 2</h3>
-                <p>Description of tutoring service...</p>
-            </div>
-            <div class="service-card">
-                <h3>Subject 3</h3>
-                <p>Description of tutoring service...</p>
-            </div>
-        </div>
+    <section id="skills" class="skills interactive">
+        <h2>Skills</h2>
+        <img src="skills.jpg" alt="Skills Image">
+        <ul>
+            <li>Programming: Python, Java, C</li>
+            <li>Web Development: HTML, CSS, JavaScript</li>
+            <li>AI and Machine Learning</li>
+            <li>Cloud Computing and Networking</li>
+            <li>Operating Systems and Computer Architecture</li>
+            <li>Graph Theory and Quantum Mechanics</li>
+        </ul>
     </section>
 
-    <section id="contact">
-        <h2 class="section-title">Contact Me</h2>
-        <form class="contact-form">
-            <input type="text" placeholder="Name" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Message" rows="5" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+    <section id="qualifications" class="qualifications interactive">
+        <h2>Qualifications</h2>
+        <img src="qualifications.jpg" alt="Qualifications Image">
+        <ul>
+            <li>University of Waterloo: Accounting and Financial Management, Honours, Co-op ($2000 President's Scholarship)</li>
+            <li>Gandhi Institute of Technology and Management: Computer Science Engineering with a minor in Mechanical Engineering (8.85 CGPA)</li>
+            <li>Full Stack Developer Intern at GitHub Octernship</li>
+            <li>Incoming Solutions Architect at AWS Virtual Experience Internship</li>
+        </ul>
+    </section>
+
+    <section id="syllabus" class="syllabus interactive">
+        <h2>5-Month Tutoring Program</h2>
+        <img src="syllabus.jpg" alt="Syllabus Image">
+        <p>This program is designed to cover the following:</p>
+        <h3>Syllabus</h3>
+        <ul>
+            <li>Month 1: Foundations and Fundamentals (Introduction to Computers, Programming with Python, HTML & CSS Basics)</li>
+            <li>Month 2: Programming and Engineering Basics (Python Advanced, Intro to Java, Binary Numbers, Operating Systems)</li>
+            <li>Month 3: Networking, AI, and Web Development (Networking Basics, JavaScript, AI Applications, Cloud Computing)</li>
+            <li>Month 4: Advanced Concepts (Quantum Mechanics, Computer Architecture, Memory & Storage)</li>
+            <li>Month 5: Final Projects and Applications (Programming & Web Development Showcase, AI Projects)</li>
+        </ul>
+        <h3>Timings</h3>
+        <p>Classes are held on Saturdays and Sundays for 1-2 hours per session, ensuring a total of 40 focused sessions over 5 months.</p>
+        <h3>Pricing</h3>
+        <p>Affordable pricing available upon request. Contact me for more details!</p>
+    </section>
+
+    <section id="contact" class="contact interactive">
+        <h2>Contact Me</h2>
+        <img src="contact.jpg" alt="Contact Image">
+        <p>Email: <a href="mailto:mitraboga31@gmail.com">mitraboga31@gmail.com</a></p>
+        <p>Phone/WhatsApp: <a href="tel:+918125263863">+91 81252 63863</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/bogamitra/" target="_blank">https://www.linkedin.com/in/bogamitra/</a></p>
+        <p>GitHub: <a href="https://github.com/mitraboga" target="_blank">https://github.com/mitraboga</a></p>
     </section>
 
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2024 Mitra Boga | All Rights Reserved</p>
     </footer>
 </body>
 </html>
