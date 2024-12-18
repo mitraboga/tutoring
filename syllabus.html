@@ -9,21 +9,17 @@
             margin: 0;
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            background-color: #e3e8f0;
+            background-color: #d4e0e5; /* Dull blue background */
             color: #1a1a2e;
-            padding: 0 20px;
+            padding: 0;
         }
         header {
-            position: fixed;
-            top: 0;
-            width: 100%;
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 10px 20px;
             background-color: #162447;
-            z-index: 1000;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            color: white;
         }
         header img {
             height: 50px;
@@ -40,38 +36,45 @@
         header nav a:hover {
             color: #f0a500;
         }
-        .content {
-            margin-top: 80px;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
+        .content-container {
             background-color: #ffffff;
+            margin: 20px auto;
             padding: 20px;
+            width: 70%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
         h1 {
             color: #162447;
+            text-align: center;
         }
         h2 {
             color: #1f4068;
             margin-top: 20px;
+            border-bottom: 2px solid #162447;
+            padding-bottom: 5px;
         }
         h3 {
             color: #e43f5a;
             margin-top: 15px;
         }
         ul {
-            margin: 10px 0;
-            padding-left: 20px;
+            margin: 10px 0 20px 20px;
         }
-        ul li {
-            margin-bottom: 5px;
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #162447;
+            color: #e4e4e4;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Logo">
+        <img src="logo.png" alt="Mitra Boga Logo">
         <nav>
             <a href="#month1">Month 1</a>
             <a href="#month2">Month 2</a>
@@ -80,7 +83,7 @@
             <a href="#month5">Month 5</a>
         </nav>
     </header>
-    <div class="content">
+    <div class="content-container">
         <h1>Syllabus</h1>
 
         <h2 id="month1">Month 1: Foundations and Fundamentals</h2>
@@ -102,7 +105,7 @@
         <h2 id="month2">Month 2: Programming and Engineering Basics</h2>
         <h3>Week 5-6: Advanced Python and Java</h3>
         <ul>
-            <li>Functions, and file handling in Python.</li>
+            <li>Functions and file handling in Python.</li>
             <li>Mini-project: A text-based game.</li>
             <li>Introduction to Java: Syntax, variables, and loops.</li>
         </ul>
@@ -156,5 +159,8 @@
             <li>Career guidance and next steps to get into Tier 1 Universities.</li>
         </ul>
     </div>
+    <footer>
+        &copy; 2024 Mitra Boga. All Rights Reserved.
+    </footer>
 </body>
 </html>
