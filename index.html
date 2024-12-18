@@ -1,209 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mitra Boga Tutoring</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Mitra Boga Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #1a1a2e;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #162447;
+        }
+        header img {
+            height: 50px;
+        }
+        header nav {
+            display: flex;
+            gap: 20px;
+        }
+        header nav a {
+            color: #e4e4e4;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        header nav a:hover {
+            color: #f0a500;
+        }
+        #profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+            width: 250px;
+            min-height: 100vh;
+        }
+        #profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+        #profile a {
+            color: #162447;
+            text-decoration: none;
+            margin: 5px 0;
+        }
+        #profile a:hover {
+            color: #f0a500;
+        }
+        .container {
+            display: flex;
+        }
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        .about {
+            margin-bottom: 40px;
+        }
+        .about h2 {
+            color: #162447;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #162447;
+            color: #e4e4e4;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
-
 <body>
     <header>
-        <div class="logo">
-            <img src="logo.png" alt="Mitra Boga Tutoring Logo">
-        </div>
+        <img src="logo.png" alt="Mitra Boga Logo">
         <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="syllabus.html">Syllabus</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="timings.html">Timings</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <a href="#syllabus">Syllabus</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#timings">Timings</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
-
-    <main>
-        <section class="profile">
-            <div class="profile-picture" style="background-color: lightgrey;">
-                <img src="profile.jpg" alt="Mitra Boga">
-                <div class="contact-info">
-                    <p><a href="https://www.linkedin.com/in/bogamitra/">LinkedIn</a></p>
-                    <p><a href="https://github.com/mitraboga">GitHub</a></p>
-                </div>
-            </div>
-            <div class="about">
-                <h1>About Me</h1>
+    <div class="container">
+        <aside id="profile">
+            <img src="profile.jpg" alt="Mitra Boga">
+            <a href="https://www.linkedin.com/in/bogamitra/">LinkedIn</a>
+            <a href="https://github.com/mitraboga">GitHub</a>
+        </aside>
+        <div class="content">
+            <section class="about">
+                <h2>About Me</h2>
                 <p>Hi, I'm Mitra Boga, a 21-year-old with an unwavering passion for business and technology. From tracking advancements in top S&P500 companies to exploring cutting-edge innovations like cloud computing, AI, and tools like ChatGPT, I’m constantly driven to stay ahead in the tech-driven world.</p>
-                <h2>My Vision</h2>
-                <p>Through my unique journey, I’ve gained experiences and learned lessons that many don’t encounter until their late 20s...</p>
-                <!-- Full About Me content from earlier goes here -->
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Mitra Boga Tutoring. All rights reserved.</p>
-    </footer>
-</body>
-
-</html>
-
-<!-- Create additional HTML pages for each section -->
-<!-- syllabus.html -->
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syllabus</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="Mitra Boga Tutoring Logo">
+                <h3>My Vision</h3>
+                <p>Through my unique journey, I’ve gained experiences and learned lessons that many don’t encounter until their late 20s. This perspective enables me to understand what to leverage and how to teach effectively, especially to young, driven students who share a passion for engineering and technology.</p>
+                <p>As a member of their generation, I relate to how kids think, learn, and grow. I don’t believe in rote learning or outdated teaching methods. Instead, I focus on building a strong foundation through hands-on learning and real-world applications. My mission is to empower the next generation to not just learn but to innovate and excel, leveraging their curiosity to build a better future. Through my tutoring program, I promise to equip your kids with the foundations of computer science, giving them the problem-solving and reasoning skills to build projects of their own. Through my service, your kids will be the strongest in their upper-year classes and have leverage over other high-achieving students when applying to Tier 1 universities.</p>
+                <h3>My Educational Qualification</h3>
+                <p>I began my academic journey at the University of Waterloo, studying Accounting and Financial Management for two years. I achieved this feat by attaining a 93.4% average in High School with impeccable essays which got me accepted into every top Business School in Canada (University of Toronto - Rotman, Western Ivey, Schulich School of Business, McMaster DeGroote School of Business, etc.). However, I soon realized that the formal education system isn’t evolving with current market trends, with some becoming less relevant in the face of fast-changing industry demands. This insight fueled my decision to pursue a high-ROI degree in Computer Science Engineering, equipping myself with the skills needed to thrive in a technology-first world.</p>
+                <p>I am currently in my 4th semester at the Gandhi Institute of Technology and Management in India; a country renowned for producing some of the world's best engineers and mathematicians making 70% of H1-B and TN visa holders Indian-origin software engineers! I’m majoring in Computer Science Engineering with a minor in Mechanical Engineering. I've mastered the building blocks of computer science and ranked as an advanced student, maintaining an 8.85 CGPA. Along the way, I’ve earned multiple professor recommendation letters (available on my GitHub) and completed prestigious certifications from:</p>
+                <ul>
+                    <li>Harvard University in Python and SQL</li>
+                    <li>Vanderbilt University in Generative AI Automation</li>
+                </ul>
+                <h3>Professional Experience</h3>
+                <p>My practical exposure includes roles that have pushed the boundaries of my skill set, including:</p>
+                <ul>
+                    <li>Full Stack Developer Intern at GitHub Octernship</li>
+                    <li>Incoming AWS Solutions Architect Intern at Amazon for Summer 2025</li>
+                </ul>
+            </section>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="syllabus.html">Syllabus</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="timings.html">Timings</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <h1>Syllabus</h1>
-        <p>Content will be added later...</p>
-    </main>
-
+    </div>
     <footer>
-        <p>&copy; 2024 Mitra Boga Tutoring. All rights reserved.</p>
+        &copy; 2024 Mitra Boga. All Rights Reserved.
     </footer>
 </body>
-
-</html>
-
-<!-- pricing.html -->
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pricing</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="Mitra Boga Tutoring Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="syllabus.html">Syllabus</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="timings.html">Timings</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <h1>Pricing</h1>
-        <p>$35 CAD/hour</p>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Mitra Boga Tutoring. All rights reserved.</p>
-    </footer>
-</body>
-
-</html>
-
-<!-- timings.html -->
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timings</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="Mitra Boga Tutoring Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="syllabus.html">Syllabus</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="timings.html">Timings</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <h1>Timings</h1>
-        <p>Classes will be held on Saturdays and Sundays for 1-2 hours each day.</p>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Mitra Boga Tutoring. All rights reserved.</p>
-    </footer>
-</body>
-
-</html>
-
-<!-- contact.html -->
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="Mitra Boga Tutoring Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="syllabus.html">Syllabus</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="timings.html">Timings</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <h1>Contact</h1>
-        <p>Email: <a href="mailto:mitraboga31@gmail.com">mitraboga31@gmail.com</a></p>
-        <p>Phone/WhatsApp: +91 81252 63863</p>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Mitra Boga Tutoring. All rights reserved.</p>
-    </footer>
-</body>
-
 </html>
