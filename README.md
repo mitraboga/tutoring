@@ -1,4 +1,4 @@
-## TUTORING
+# TUTORING
 
 # About Me
 Hi, I'm Mitra Boga, a 21-year-old with an unwavering passion for business and technology. From tracking advancements in top S&P500 companies to exploring cutting-edge innovations like cloud computing, AI, and tools like ChatGPT, I’m constantly driven to stay ahead in the tech-driven world.
