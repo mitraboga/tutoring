@@ -12,6 +12,7 @@
             background-color: #e3e8f0;
             color: #1a1a2e;
             padding: 0 20px;
+            box-sizing: border-box;
         }
         header {
             position: fixed;
@@ -24,6 +25,7 @@
             background-color: #162447;
             z-index: 1000;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            box-sizing: border-box;
         }
         header img {
             height: 50px;
@@ -48,9 +50,12 @@
             background-color: #ffffff;
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
         h1 {
             color: #162447;
+            text-align: center;
+            text-decoration: underline;
         }
         h2 {
             color: #1f4068;
@@ -58,11 +63,22 @@
         p {
             margin-bottom: 15px;
         }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #162447;
+            color: #e4e4e4;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            box-sizing: border-box;
+        }
     </style>
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Logo">
+        <img src="logo.jpg" alt="Logo">
         <nav>
             <a href="syllabus.html">Syllabus</a>
             <a href="pricing.html">Pricing</a>
@@ -71,9 +87,12 @@
     </header>
     <div class="content">
         <h1>Class Timings</h1>
-        <p><strong>Weekends:</strong> 2 hours on Saturday and Sunday </p>
+        <p><strong>Weekends:</strong> 2 hours on Saturday and Sunday</p>
         <p><strong>Timings:</strong> time-slot from 7:30 PM - 9:30 PM IST (9:00 AM - 11:00 AM)</p>
-        <p>Contact us to discuss your preferred time slots!</p>
+        <p>Contact me to discuss your preferred time slots!</p>
     </div>
+    <footer>
+        &copy; 2024 All Rights Reserved.
+    </footer>
 </body>
 </html>
