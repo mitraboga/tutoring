@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Testimonials</title>
+<style>
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e8f1ff; /* Light blue background from syllabus.html */
+    color: #333;
+    text-align: center;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #162447; /* Dark blue banner */
+}
+header img {
+    height: 50px;
+}
+
+/* Testimonial Content */
+h1 {
+    margin: 20px 0;
+    color: #162447; /* Dark blue for heading */
+    font-size: 2.5em;
+}
+p {
+    font-size: 1.2em;
+    margin: 10px auto;
+    max-width: 800px;
+    color: #555;
+}
+
+/* Testimonial Images */
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+}
+.portrait-images {
+    display: flex;
+    gap: 20px;
+}
+.portrait-images img, .landscape-image img {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.portrait-images img {
+    width: 45%; /* Adjusted for side-by-side portrait orientation */
+    height: auto;
+}
+.landscape-image img {
+    width: 90%; /* Full width for landscape orientation */
+    height: auto;
+}
+</style>
+</head>
+<body>
+<header>
+    <img src="logo.jpg" alt="Logo">
+</header>
+
+<main>
+    <h1>Testimonials</h1>
+    <p>Here are some testimonials showcasing the impact of Mitra Boga's tutoring program and work, shared by students and parents alike. These moments reflect dedication and passion for excellence in education.</p>
+    
+    <div class="testimonial-container">
+        <div class="portrait-images">
+            <img src="portrait1.jpg" alt="Portrait Testimonial 1">
+            <img src="portrait2.jpg" alt="Portrait Testimonial 2">
+        </div>
+        <div class="landscape-image">
+            <img src="landscape.jpg" alt="Landscape Testimonial">
+        </div>
+    </div>
+</main>
+</body>
+</html>
