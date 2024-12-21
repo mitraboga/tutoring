@@ -6,11 +6,13 @@
 <title>Mitra Boga Portfolio</title>
 <style>
 /* General Styles */
-body {
+body, html {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #ffffff;
     color: #1a1a2e;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    box-sizing: border-box;
 }
 
 /* Header */
@@ -48,15 +50,17 @@ header nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center; /* Centers content within the panel */
     background-color: #f0f0f0;
     padding: 20px;
-    width: 100%; /* Full width by default */
+    width: 70%; /* Default to 70% width */
     box-sizing: border-box;
+    margin: auto; /* Centers on smaller screens */
 }
 #profile img {
     border-radius: 50%;
-    width: 150px; /* Reduced size for better mobile fit */
-    height: 150px;
+    width: 200px; /* Larger profile picture */
+    height: 200px;
     margin-bottom: 20px;
 }
 #profile a {
@@ -73,7 +77,7 @@ header nav a:hover {
 .content {
     flex-grow: 1;
     padding: 20px;
-    width: 100%; /* Full width by default */
+    width: 100%;
     box-sizing: border-box;
 }
 
@@ -93,8 +97,9 @@ footer {
     padding: 10px;
     background-color: #162447;
     color: #e4e4e4;
-    position: static;
     width: 100%;
+    position: relative; /* Ensures proper alignment */
+    bottom: 0;
 }
 
 /* Responsive Styles */
@@ -117,7 +122,7 @@ footer {
     <a href="timings.html">Timings</a>
     <a href="contact.html">Contact</a>
     <a href="testimonial.html">Testimonial</a>
-    <nav>
+    </nav>
 </header>
 <div class="container">
     <aside id="profile">
@@ -131,14 +136,8 @@ footer {
             <p>Hi, I'm Mitra Boga, a 21-year-old with an unwavering passion for business and technology. From tracking advancements in top S&P500 companies to exploring cutting-edge innovations like cloud computing, AI, and tools like ChatGPT, I’m constantly driven to stay ahead in the tech-driven world.</p>
             <h3>My Vision</h3>
             <p>Through my unique journey, I’ve gained experiences and learned lessons that many don’t encounter until their late 20s. This perspective enables me to understand what to leverage and how to teach effectively, especially to young, driven students who share a passion for engineering and technology.</p>
-            <p>As a member of their generation, I relate to how kids think, learn, and grow. I don’t believe in rote learning or outdated teaching methods. Instead, I focus on building a strong foundation through hands-on learning and real-world applications. My mission is to empower the next generation to not just learn but to innovate and excel, leveraging their curiosity to build a better future. Through my tutoring program, I promise to equip your kids with the foundations of computer science, giving them the problem-solving and reasoning skills to build projects of their own. Through my service, your kids will be the strongest in their upper-year classes and have leverage over other high-achieving students when applying to Tier 1 universities.</p>
             <h3>My Educational Qualification</h3>
-            <p>I began my academic journey at the University of Waterloo, studying Accounting and Financial Management for two years. I achieved this feat by attaining a 93.4% average in High School with impeccable essays which got me accepted into every top Business School in Canada (University of Toronto - Rotman, Western Ivey, Schulich School of Business, McMaster DeGroote School of Business, etc.). However, I soon realized that the formal education system isn’t evolving with current market trends, with some becoming less relevant in the face of fast-changing industry demands. This insight fueled my decision to pursue a high-ROI degree in Computer Science Engineering, equipping myself with the skills needed to thrive in a technology-first world.</p>
-            <p>I am currently in my 4th semester at the Gandhi Institute of Technology and Management in India; a country renowned for producing some of the world's best engineers and mathematicians making 70% of H1-B and TN visa holders Indian-origin software engineers! I’m majoring in Computer Science Engineering with a minor in Mechanical Engineering. I've mastered the building blocks of computer science and ranked as an advanced student, maintaining an 8.85 CGPA. Along the way, I’ve earned multiple professor recommendation letters (available on my GitHub) and completed prestigious certifications from:</p>
-            <ul>
-                <li>Harvard University in Python and SQL</li>
-                <li>Vanderbilt University in Generative AI Automation</li>
-            </ul>
+            <p>I began my academic journey at the University of Waterloo, where I spent 2 years studying Accounting and Financial Management. However, my passion for technology led me to pivot to Computer Science, where I am currently a B.Tech student at GITAM University, India, with a minor in Mechanical Engineering.</p>
             <h3>Professional Experience</h3>
             <ul>
                 <li>Full Stack Developer Intern at GitHub Octernship</li>
