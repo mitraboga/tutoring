@@ -11,7 +11,10 @@
             line-height: 1.6;
             background-color: #e3e8f0;
             color: #1a1a2e;
-            padding: 0 20px;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         header {
             position: fixed;
@@ -24,10 +27,10 @@
             background-color: #162447;
             z-index: 1000;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            box-sizing: border-box;
         }
         header img {
             height: 50px;
-            cursor: pointer;
         }
         header nav {
             display: flex;
@@ -49,11 +52,13 @@
             background-color: #ffffff;
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex-grow: 1;
+            box-sizing: border-box;
         }
         h1 {
+            color: #162447;
             text-align: center;
             text-decoration: underline;
-            color: #162447;
         }
         h2 {
             color: #1f4068;
@@ -70,12 +75,13 @@
             position: fixed;
             bottom: 0;
             left: 0;
+            box-sizing: border-box;
         }
     </style>
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="logo.jpg" alt="Logo"></a>
+        <img src="logo.jpg" alt="Logo">
         <nav>
             <a href="syllabus.html">Syllabus</a>
             <a href="pricing.html">Pricing</a>
@@ -89,7 +95,7 @@
         <p>Contact us to discuss your preferred time slots!</p>
     </div>
     <footer>
-        &copy; 2024 Mitra Boga. All Rights Reserved.
+        &copy; 2024 All Rights Reserved.
     </footer>
 </body>
 </html>
