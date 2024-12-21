@@ -14,6 +14,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding: 20px;
         }
         h1 {
             color: #162447;
@@ -28,128 +29,168 @@
             color: #e43f5a;
             margin-top: 15px;
         }
-        section {
-            width: 60%;
-            background-color: #f0f8ff;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-sizing: border-box;
-        }
         hr {
             border: 0;
-            height: 2px;
-            background-color: #162447;
+            height: 1px;
+            background: #ccc;
             margin: 20px 0;
+            width: 100%;
+        }
+        .content {
+            width: 60%;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #162447;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        header img {
+            height: 50px;
+        }
+        header nav {
+            display: flex;
+            gap: 15px;
+        }
+        header nav a {
+            color: #e4e4e4;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        header nav a:hover {
+            color: #f0a500;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #162447;
+            color: #e4e4e4;
+            width: 100%;
+            position: relative;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
-    <header>
-        <img src="logo.jpg" alt="Mitra Boga Logo" onclick="location.href='index.html'" style="cursor: pointer;">
-        <nav>
-            <a href="#month1">Month 1</a>
-            <a href="#month2">Month 2</a>
-            <a href="#month3">Month 3</a>
-            <a href="#month4">Month 4</a>
-            <a href="#month5">Month 5</a>
-        </nav>
-    </header>
-
+<header>
+    <a href="index.html"><img src="logo.jpg" alt="Logo"></a>
+    <nav>
+        <a href="#month1">Month 1</a>
+        <a href="#month2">Month 2</a>
+        <a href="#month3">Month 3</a>
+        <a href="#month4">Month 4</a>
+        <a href="#month5">Month 5</a>
+    </nav>
+</header>
+<div class="content">
     <h1>Syllabus</h1>
 
-    <section id="month1">
-        <h2>Month 1: Foundations and Fundamentals</h2>
-        <h3>Week 1-2: Introduction to Computers and Programming</h3>
+    <h2 id="month1">Month 1: Foundations and Fundamentals</h2>
+    <h3>Week 1-2: Introduction to Computers and Programming</h3>
+    <p>
         <ul>
             <li>What is a computer? Components and basic functioning.</li>
             <li>Introduction to programming with C (flowcharts and pseudocode).</li>
             <li>Basics of Python: Variables, loops, and conditionals.</li>
             <li>Simple programs (e.g., a number guessing game).</li>
         </ul>
-        <h3>Week 3-4: Exploring the Web and Logical Thinking</h3>
+    </p>
+    <h3>Week 3-4: Exploring the Web and Logical Thinking</h3>
+    <p>
         <ul>
             <li>HTML & CSS: Basics and creating a simple webpage.</li>
             <li>Logical reasoning (truth tables, basic logic gates).</li>
             <li>Intro to Graph Theory: Nodes, edges, and real-world applications.</li>
             <li>Hands-on: Drawing graphs for social networks or maps.</li>
         </ul>
-    </section>
-
+    </p>
     <hr>
 
-    <section id="month2">
-        <h2>Month 2: Programming and Engineering Basics</h2>
-        <h3>Week 5-6: Advanced Python and Java</h3>
+    <h2 id="month2">Month 2: Programming and Engineering Basics</h2>
+    <h3>Week 5-6: Advanced Python and Java</h3>
+    <p>
         <ul>
             <li>Functions, and file handling in Python.</li>
             <li>Mini-project: A text-based game.</li>
             <li>Introduction to Java: Syntax, variables, and loops.</li>
         </ul>
-        <h3>Week 7-8: Computer Engineering Basics (Operating Systems)</h3>
+    </p>
+    <h3>Week 7-8: Computer Engineering Basics (Operating Systems)</h3>
+    <p>
         <ul>
             <li>How a computer processes data (binary numbers, CPU, memory).</li>
             <li>Hands-on: Representing numbers and text in binary.</li>
             <li>Intro to Operating Systems: What they do and why they matter.</li>
             <li>Basic terminal commands (CLI tools).</li>
         </ul>
-    </section>
-
+    </p>
     <hr>
 
-    <section id="month3">
-        <h2>Month 3: Networks, AI, and Web Development</h2>
-        <h3>Week 9-10: Networking and Web Development</h3>
+    <h2 id="month3">Month 3: Networks, AI, and Web Development</h2>
+    <h3>Week 9-10: Networking and Web Development</h3>
+    <p>
         <ul>
             <li>Basics of networking (IP, protocols, how the internet works).</li>
             <li>Building interactive web pages with JavaScript.</li>
             <li>Project: Create a mini-website.</li>
         </ul>
-        <h3>Week 11-12: AI and Cloud Computing</h3>
+    </p>
+    <h3>Week 11-12: AI and Cloud Computing</h3>
+    <p>
         <ul>
             <li>Introduction to AI: Applications and hands-on with online tools.</li>
             <li>Introduction to Cloud Computing: Examples, how it works, and its benefits.</li>
         </ul>
-    </section>
-
+    </p>
     <hr>
 
-    <section id="month4">
-        <h2>Month 4: Diving Deeper into Core Concepts</h2>
-        <h3>Week 13-14: Quantum Mechanics and Physics for Computing</h3>
+    <h2 id="month4">Month 4: Diving Deeper into Core Concepts</h2>
+    <h3>Week 13-14: Quantum Mechanics and Physics for Computing</h3>
+    <p>
         <ul>
             <li>Basic quantum mechanics concepts (qubits, superposition).</li>
             <li>Fun with Schrödinger’s cat.</li>
             <li>Applications of quantum mechanics in computing.</li>
         </ul>
-        <h3>Week 15-16: Computer Organization and Architecture</h3>
+    </p>
+    <h3>Week 15-16: Computer Organization and Architecture</h3>
+    <p>
         <ul>
             <li>How processors work (intro to architecture).</li>
             <li>Hands-on: Understand a simple CPU model.</li>
             <li>Memory and storage: RAM vs. ROM, and storage hierarchy.</li>
         </ul>
-    </section>
-
+    </p>
     <hr>
 
-    <section id="month5">
-        <h2>Month 5: Final Projects and Integration</h2>
-        <h3>Week 17-18: Final Integration and Projects</h3>
+    <h2 id="month5">Month 5: Final Projects and Integration</h2>
+    <h3>Week 17-18: Final Integration and Projects</h3>
+    <p>
         <ul>
             <li>Review of programming concepts (Python, Java, and C).</li>
             <li>Project brainstorming: Building something of their choice.</li>
             <li>Final Project 1: Web Development Showcase.</li>
         </ul>
-        <h3>Week 19-20: Closing and Real-World Applications</h3>
+    </p>
+    <h3>Week 19-20: Closing and Real-World Applications</h3>
+    <p>
         <ul>
             <li>Final Project 2: AI or Networking Simulation.</li>
             <li>Integration: Discuss how concepts interconnect (networking, cloud, AI).</li>
             <li>Presentations and feedback.</li>
             <li>Career guidance and next steps to get into Tier 1 Universities.</li>
         </ul>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Mitra Boga. All Rights Reserved.</p>
-    </footer>
+    </p>
+</div>
+<footer>
+    &copy; 2024 Mitra Boga. All Rights Reserved.
+</footer>
 </body>
 </html>
