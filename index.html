@@ -11,8 +11,9 @@ body, html {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
     color: #1a1a2e;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden;
     box-sizing: border-box;
+    height: 100%;
 }
 
 /* Header */
@@ -43,6 +44,7 @@ header nav a:hover {
 .container {
     display: flex;
     flex-wrap: wrap; /* Enables wrapping for smaller screens */
+    min-height: calc(100vh - 50px); /* Ensure container fills remaining screen height */
 }
 
 /* Profile Section */
@@ -50,18 +52,18 @@ header nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Centers content within the panel */
     background-color: #f0f0f0;
     padding: 20px;
-    width: 70%; /* Default to 70% width */
+    width: 100%;
     box-sizing: border-box;
-    margin: auto; /* Centers on smaller screens */
+    height: 100%; /* Full height of the page */
 }
 #profile img {
     border-radius: 50%;
-    width: 200px; /* Larger profile picture */
+    width: 200px;
     height: 200px;
     margin-bottom: 20px;
+    margin-top: 0; /* Center profile picture at the top */
 }
 #profile a {
     color: #162447;
@@ -98,14 +100,18 @@ footer {
     background-color: #162447;
     color: #e4e4e4;
     width: 100%;
-    position: relative; /* Ensures proper alignment */
+    position: absolute; /* Always stick footer to the bottom */
     bottom: 0;
 }
 
 /* Responsive Styles */
 @media (min-width: 768px) {
+    .container {
+        display: flex;
+    }
     #profile {
         width: 30%; /* Adjusts profile section width for larger screens */
+        height: auto; /* Let profile stretch on larger screens */
     }
     .content {
         width: 70%; /* Adjusts content section width for larger screens */
