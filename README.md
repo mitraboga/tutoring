@@ -13,9 +13,9 @@ I began my academic journey at the University of Waterloo, studying Accounting a
 
 I am currently in my 4th semester at the Gandhi Institute of Technology and Management in India; a country renowned for producing some of the world's best engineers and mathematicians making 70% of H1-B and TN visa holders Indian-origin software engineers! I’m majoring in Computer Science Engineering with a minor in Mechanical Engineering. I've mastered the building blocks of computer science and ranked as an advanced student, maintaining an 8.85 CGPA. Along the way, I’ve earned multiple professor recommendation letters (available on my GitHub) and completed prestigious certifications from:
 
-*Harvard University in Python and SQL
-*Vanderbilt University in Generative AI Automation
+* Harvard University in Python and SQL
+* Vanderbilt University in Generative AI Automation
 
 # Professional Experience
-*Full Stack Developer Intern at GitHub Octernship
-*Incoming AWS Solutions Architect Intern at Amazon for Summer 2025
+* Full Stack Developer Intern at GitHub Octernship
+* Incoming AWS Solutions Architect Intern at Amazon for Summer 2025
