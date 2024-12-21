@@ -5,84 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Syllabus</title>
     <style>
-        /* General Styles */
-        body, html {
+        body {
             margin: 0;
             font-family: Arial, sans-serif;
             line-height: 1.6;
             background-color: #ffffff;
             color: #1a1a2e;
-            box-sizing: border-box;
         }
-        
-        /* Header */
+
+        /* Header Styles */
         header {
             position: sticky;
             top: 0;
             display: flex;
-            align-items: center;
             justify-content: space-between;
+            align-items: center;
             padding: 10px 20px;
             background-color: #162447;
-            color: #e4e4e4;
             z-index: 1000;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+
         header img {
             height: 50px;
             cursor: pointer;
         }
+
         header nav {
             display: flex;
             gap: 20px;
         }
+
         header nav a {
             color: #e4e4e4;
             text-decoration: none;
             font-weight: bold;
         }
+
         header nav a:hover {
             color: #f0a500;
         }
 
-        /* Flexbox Container */
+        /* Main Content Styles */
         .container {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-            background-color: #f0f0f0;
+            justify-content: center;
+            background-color: #e4f0f6;
+            padding: 20px 0;
         }
 
         .content {
-            max-width: 900px;
+            width: 60%;
             background-color: #ffffff;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
         }
 
         h1 {
             color: #162447;
-            text-align: center;
-            margin-bottom: 20px;
         }
+
         h2 {
             color: #1f4068;
             margin-top: 20px;
         }
+
         h3 {
             color: #e43f5a;
             margin-top: 15px;
         }
+
+        p, ul {
+            margin-bottom: 20px;
+        }
+
         ul {
             padding-left: 20px;
         }
+
         li {
             margin-bottom: 10px;
         }
 
-        /* Footer */
+        /* Footer Styles */
         footer {
             text-align: center;
             padding: 10px;
@@ -93,21 +98,23 @@
             width: 100%;
         }
 
-        /* Responsive Styles */
+        /* Responsive Design */
         @media (max-width: 768px) {
             .content {
-                width: 100%;
-                margin: 10px;
-                box-sizing: border-box;
+                width: 90%;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .container {
+                padding: 20px 10%;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <a href="index.html#about">
-            <img src="logo.jpg" alt="Mitra Boga Logo">
-        </a>
+        <img src="logo.jpg" alt="Logo" onclick="window.location.href='index.html';">
         <nav>
             <a href="#month1">Month 1</a>
             <a href="#month2">Month 2</a>
@@ -129,6 +136,7 @@
                 <li>Basics of Python: Variables, loops, and conditionals.</li>
                 <li>Simple programs (e.g., a number guessing game).</li>
             </ul>
+
             <h3>Week 3-4: Exploring the Web and Logical Thinking</h3>
             <ul>
                 <li>HTML & CSS: Basics and creating a simple webpage.</li>
@@ -144,6 +152,7 @@
                 <li>Mini-project: A text-based game.</li>
                 <li>Introduction to Java: Syntax, variables, and loops.</li>
             </ul>
+
             <h3>Week 7-8: Computer Engineering Basics (Operating Systems)</h3>
             <ul>
                 <li>How a computer processes data (binary numbers, CPU, memory).</li>
@@ -159,6 +168,7 @@
                 <li>Building interactive web pages with JavaScript.</li>
                 <li>Project: Create a mini-website.</li>
             </ul>
+
             <h3>Week 11-12: AI and Cloud Computing</h3>
             <ul>
                 <li>Introduction to AI: Applications and hands-on with online tools.</li>
@@ -172,6 +182,7 @@
                 <li>Fun with Schrödinger’s cat.</li>
                 <li>Applications of quantum mechanics in computing.</li>
             </ul>
+
             <h3>Week 15-16: Computer Organization and Architecture</h3>
             <ul>
                 <li>How processors work (intro to architecture).</li>
@@ -186,6 +197,7 @@
                 <li>Project brainstorming: Building something of their choice.</li>
                 <li>Final Project 1: Web Development Showcase.</li>
             </ul>
+
             <h3>Week 19-20: Closing and Real-World Applications</h3>
             <ul>
                 <li>Final Project 2: AI or Networking Simulation.</li>
