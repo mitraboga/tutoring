@@ -50,18 +50,20 @@ p {
 }
 .portrait-images {
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
 }
 .portrait-images img, .landscape-image img {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .portrait-images img {
-    width: 45%; /* Adjusted for side-by-side portrait orientation */
+    width: 40%; /* Reduced size for side-by-side portrait orientation */
     height: auto;
 }
 .landscape-image img {
-    width: 90%; /* Full width for landscape orientation */
+    width: 85%; /* Reduced size for landscape orientation */
     height: auto;
 }
 </style>
