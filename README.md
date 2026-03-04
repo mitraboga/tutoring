@@ -18,4 +18,3 @@ I am currently in my 4th semester at the Gandhi Institute of Technology and Mana
 
 # Professional Experience
 * Full Stack Developer Intern at GitHub Octernship
-* Incoming AWS Solutions Architect Intern at Amazon for Summer 2025
